@@ -1,0 +1,50 @@
+/* Navbar.css */
+
+.custom-navbar {
+  background-color: black;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 2rem;
+  color: white !important;
+}
+
+.nav-links {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  color: white !important;
+  margin: 0 10px;
+  position: relative;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: #00ff00 !important;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00ff00;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.btn-success {
+  background-color: #00ff00;
+  border-color: #00ff00;
+}
