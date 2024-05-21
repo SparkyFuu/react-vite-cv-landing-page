@@ -1,13 +1,13 @@
 import { Col, ProgressBar, Row } from "react-bootstrap";
 
 const skillsData = [
-  { name: "HTML", level: 100, skillLevel: "Semi Senior" },
-  { name: "CSS", level: 90, skillLevel: "Semi Senior" },
+  { name: "HTML", level: 100, skillLevel: "Junior" },
+  { name: "CSS", level: 90, skillLevel: "Junior" },
   { name: "JavaScript", level: 80, skillLevel: "Junior" },
   { name: "TypeScript", level: 80, skillLevel: "Junior" },
   { name: "Python", level: 20, skillLevel: "Junior" },
-  { name: "Java", level: 80, skillLevel: "Semi Senior" },
-  { name: "PHP", level: 40, skillLevel: "Trainee" },
+  { name: "Java", level: 80, skillLevel: "Junior" },
+  { name: "PHP", level: 40, skillLevel: "Junior" },
   { name: "Lua", level: 80, skillLevel: "Junior" },
   { name: "Photoshop", level: 50, skillLevel: "Junior" },
   { name: "MySQL", level: 70, skillLevel: "Junior" },
