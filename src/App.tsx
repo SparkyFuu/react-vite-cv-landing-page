@@ -12,7 +12,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <NavBar></NavBar>
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-me" element={<About />} />
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/contacto" element={<></>} />
           <Route path="/descargar-cv" element={<></>} />
         </Routes>
-        <Footer></Footer>
+        <Footer />
       </BrowserRouter>
     </>
   );

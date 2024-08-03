@@ -24,23 +24,23 @@ const HomeMain = () => {
           </h2>
         </Col>
       </Row>
-      <Row className="home-social-icons mt-2 justify-content-center">
-        <Col xs="auto">
+      <Row className="home-social-icons mt-2">
+        <Col>
           <a href="https://wa.me/954862744" target="_blank">
             <FontAwesomeIcon icon={faWhatsapp} color="white" />
           </a>
         </Col>
-        <Col xs="auto">
+        <Col>
           <a href="https://www.instagram.com/_spark.02_/" target="_blank">
             <FontAwesomeIcon icon={faInstagram} color="white" />
           </a>
         </Col>
-        <Col xs="auto">
+        <Col>
           <a href="https://github.com/SparkyFuu" target="_blank">
             <FontAwesomeIcon icon={faGithub} color="white" />
           </a>
         </Col>
-        <Col xs="auto">
+        <Col>
           <a>
             <FontAwesomeIcon icon={faUser} color="white" />
           </a>
