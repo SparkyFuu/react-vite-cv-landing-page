@@ -1,9 +1,16 @@
+import { useState } from "react";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col, Image, Row, Button } from "react-bootstrap";
 import "../assets/about.css";
 
 const AboutMe = () => {
+  const [showMore, setShowMore] = useState(false);
+
+  const handleToggle = () => {
+    setShowMore(!showMore);
+  };
+
   return (
     <>
       <div className="section-title mt-2">
@@ -62,7 +69,7 @@ const AboutMe = () => {
                     color="#00ff00"
                     className="me-2"
                   />
-                  <strong>Edad:</strong> <span>20</span>
+                  <strong>Edad:</strong> <span>21</span>
                 </li>
                 <li>
                   <FontAwesomeIcon
@@ -94,16 +101,48 @@ const AboutMe = () => {
           </div>
           <p>
             Soy un desarrollador front-end apasionado por la creación de sitios
-            web atractivos y funcionales. Con experiencia en la implementación
-            de diseños responsivos y la integración de tecnologías modernas como
-            HTML5, CSS3 y JavaScript, he trabajado en proyectos que van desde
-            sitios web simples hasta aplicaciones web complejas. Además, cuento
-            con habilidades en el manejo de frameworks y librerías populares
-            como Bootstrap y jQuery, y también en la programación del lado del
-            servidor utilizando PHP. Me gusta estar al tanto de las últimas
-            tendencias en diseño y desarrollo web para poder ofrecer soluciones
-            innovadoras y eficientes a los clientes.
+            web atractivos y funcionales, con un sólido historial en la
+            implementación de diseños responsivos y la integración de
+            tecnologías modernas como HTML5, CSS3 y JavaScript. He trabajado en
+            una amplia gama de proyectos, desde sitios web simples hasta
+            aplicaciones web complejas, siempre enfocado en brindar soluciones
+            innovadoras y eficientes.
           </p>
+
+          <p>
+            Tengo experiencia en el uso de frameworks y librerías populares como
+            Bootstrap y jQuery, y también he desarrollado habilidades en la
+            programación del lado del servidor con PHP. Además, he ampliado mi
+            expertise al trabajar con React y TypeScript para el desarrollo de
+            interfaces de usuario dinámicas y escalables.
+          </p>
+
+          {showMore && (
+            <>
+              <p>
+                En el ámbito del backend, tengo experiencia con Java Spring, lo
+                que me permite crear aplicaciones robustas y seguras. También
+                soy competente en la gestión de bases de datos, específicamente
+                con PostgreSQL, lo que garantiza una integración fluida y
+                eficiente de los datos en mis proyectos.
+              </p>
+
+              <p>
+                Me mantengo al tanto de las últimas tendencias en diseño y
+                desarrollo web para ofrecer siempre las mejores soluciones a mis
+                clientes, combinando creatividad y tecnología para crear
+                experiencias web excepcionales.
+              </p>
+            </>
+          )}
+
+          <Button
+            variant="link"
+            className="text-white fw-bold"
+            onClick={handleToggle}
+          >
+            {showMore ? "Leer menos..." : "Leer más..."}
+          </Button>
         </Col>
       </Row>
     </>
